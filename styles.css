@@ -1,0 +1,44 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffdf7;
+    color: #222;
+  }
+  header {
+    background-color: #2d3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  header p {
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+  main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  article {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    color: #2d3e50;
+    margin-bottom: 0.2rem;
+  }
+  .author {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  footer {
+    background: #f0f0f0;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
