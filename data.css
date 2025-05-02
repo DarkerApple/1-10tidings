@@ -1,66 +1,104 @@
 body {
-    font-family: sans-serif;
-    padding: 20px;
-    background: #f8f9fa;
-  }
-  
-  .navbar {
-    margin-bottom: 20px;
-  }
-  
-  .navbar a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
-  .file-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .file-box {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    cursor: pointer;
-  }
-  
-  .file-box:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .pdf-viewer {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #pdfFrame {
-    width: 80%;
-    height: 80%;
-    border: none;
-  }
-  
-  #closeViewer {
-    margin-bottom: 10px;
-    padding: 10px 20px;
-  }
-  
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+nav.navbar {
+  background-color: #003366;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+}
+
+nav.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+nav.navbar a:hover,
+nav.navbar a.active {
+  background-color: #0055aa;
+}
+
+main {
+  padding: 30px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.file-box {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.file-box:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.02);
+}
+
+.file-box h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #1c2c3c;
+}
+
+.file-box p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0 0 5px;
+}
+
+.file-box span {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.pdf-viewer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #ccc;
+}
+
+.pdf-header {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.pdf-header button {
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}

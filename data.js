@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // List of PDF files
     const pdfFiles = [
-      'document1.pdf',
-      'document2.pdf',
+      "1-10학급신문 4월 copy.pdf"
       // Add more PDF file names here
     ];
   
