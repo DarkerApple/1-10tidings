@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <title>📂 자료실</title>
   <link rel="stylesheet" href="data.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Gowun+Dodum&family=Jua&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar">
@@ -14,8 +17,10 @@
   </nav>
 
   <main>
-    <h1>📂 자료실</h1>
-    <p class="desc">학교 문서, 발표 자료, 계획서 등을 모아둔 공간입니다.</p>
+    <header>
+      <h1>📂 자료실</h1>
+      <p class="desc">학교 문서, 발표 자료, 계획서 등을 모아둔 공간입니다.</p>
+    </header>
 
     <div class="file-grid">
       <div class="file-box" ondblclick="openPDF('files/1-10학급신문 4월 copy.pdf')">
@@ -34,7 +39,7 @@
       <div class="pdf-header">
         <button onclick="closePDF()">❌ 닫기</button>
       </div>
-      <iframe id="pdfFrame" width="100%" height="70%"></iframe>
+      <iframe id="pdfFrame" width="100%" height="200px"></iframe>
     </section>
   </main>
 
